@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AuthCodeRequestMessage">
+    <DisplayName>AuthCodeRequestMessage</DisplayName>
+    <Properties/>
+    <!--<Set>
+        <Headers/>
+        <QueryParams/>
+        <FormParams>
+            <FormParam name="client_id">{request.queryparam.client_id}</FormParam>
+            <FormParam name="redirect_uri">{request.queryparam.redirect_uri}</FormParam>
+            <FormParam name="scope">{request.queryparam.scope}</FormParam>
+            <FormParam name="state">{request.queryparam.state}</FormParam>
+            <FormParam name="response_code">{request.queryparam.response_code}</FormParam>
+        </FormParams>
+        <Verb>POST</Verb>
+        <Path>/oauth/authorize</Path>
+    </Set>-->
+    <Set>
+        <Payload contentType="application/json" variablePrefix="%" variableSuffix="#">
+    	    {
+    	    "client_id":"%request.formparam.client_id#",
+    	    "redirect_uri":"%request.formparam.redirect_uri#",
+    	    "scope":"%request.formparam.scope#",
+    	    "state":"%request.formparam.state#",
+    	    "response_type":"%request.formparam.response_type#"
+    	    }
+    	</Payload>
+        <Verb>POST</Verb>
+        <Path>/oauth/authorize</Path>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">AuthCodeRequest</AssignTo>
+</AssignMessage>

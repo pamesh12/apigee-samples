@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AccessTokenRefresh" version="SHA-512:b17264920795ca0fc27c770332f4ad33337744b12ca1ba0147012e0b3333bcef8dc4dc49efba8b459dd570855df8444c2e4e912001b2a17f2bdf0929c2aaaa5f"/>
+        <VersionInfo resourceName="AccessTokenRequest" version="SHA-512:ad58b6e388f06f7177efba297e89100050c9bc97f3e426765bea0f0f3c475f0fc94b7073c1daca23c020b91b72e204259cd85759b1ee330df3c8218590387c2f"/>
+        <VersionInfo resourceName="AccessTokenResponse" version="SHA-512:f54fc8eccc94472d0bdb9a4aa00cd15b1c8ea7fad0e885f2466ac6272fb9f3d2829bb2bf714fafbbcefd1e320cb038ae5b1535eb8c294195110b294cb73fbe4b"/>
+        <VersionInfo resourceName="AccessTokenResponseRT" version="SHA-512:ac442de0eaac1e3a7c18086ab96fafe75b0ecbc53a5732aeef86edf985995fe66048dda0185d8f896f175e722441ddc3f6230e6833119c9dcc729256eb745b6b"/>
+        <VersionInfo resourceName="GenerateAuthorizationCode" version="SHA-512:ab9bc09e8a3880fe3abc5c4514411557ed27f41021017f3b6960e71c0409a304c9cd74acb07b8fc89d50789c42eef2ef5431ed4d5ced81694041906fc5811d7a"/>
+        <VersionInfo resourceName="LoginPage" version="SHA-512:f1f00cde8af1dd608a98046bebf8a8cf110632a6679aba98a9896ce7f35fc155357c47ad5b7c209910f7c539b9415ff29aa0ba73de8fc13da1782ae816b923d3"/>
+        <VersionInfo resourceName="Send404NotFoundResponse" version="SHA-512:8ab1ec115aaeb382604cf8bf0996de5ac6a5f3c6ab0014ce0e9efb11b4d6a3e5e788876992e65967b02f6ddc469075f4e288b18023cd864f4259c111a730af10"/>
+        <VersionInfo resourceName="SetAuthCodeParameters" version="SHA-512:a42270a36624dad16d6bcb9f046c9b5d853a809cd05321b266b24cdb7cd63deb9518867988bba258b0fa2a20f948ab9ca22d89a460b34814288afd3c31aeaa59"/>
+        <VersionInfo resourceName="SetValidTokenResponse" version="SHA-512:ccc9abc7b5f336768db092582746e92ed433c8c3c59f49b3895c35a3bb8b49b1cc9ec8e3471282ea058fed2b508b14860963d6f960b878f884d61f505e81a586"/>
+        <VersionInfo resourceName="VerifyAccessToken" version="SHA-512:f05bc562a931f7e3891f85d348bd31cf186b909e048ea7ee4c322a89f8e3f4f87da6c1c2c744e1bb22d43be3a0d9833470e97e8885436d8034f9d99ce9946d6d"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:615b6d14357f0354592172053414f68f0d50956bcee737031e630eecf2626d5352b24e04760f7578c2cf4d74c019babbe7fa928d41a449fb4bf7166716ba67c0"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://SetAuthCodeParameters.js" version="SHA-512:80b70b07e3ffded45d87813342e5bf81b9f5b019ebc313743ce62fc062d56b75ad938764044e7c08a434e0dbe6c89b39b5ac84d5621f2013edcfa1f1662dc7a1"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="AccessTokenRefresh">
+    <DisplayName>AccessTokenRefresh</DisplayName>
+    <Operation>RefreshAccessToken</Operation>
+    <GenerateResponse enabled="false"/>
+</OAuthV2>

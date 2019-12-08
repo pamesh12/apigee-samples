@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="RedirectToAuthorize">
+    <DisplayName>RedirectToAuthorize</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="Location">
+                {config.protocol}://{config.organization}-{config.environment}.{config.domain}/oauth/authorize?client_id={appKey}&amp;response_type=code&amp;scope={scope}&amp;state=123&amp;redirect_uri={redirectUri}
+            </Header>
+        </Headers>
+        <Payload contentType="text/plain">
+			{config.protocol}://{config.organization}-{config.environment}.{config.domain}/oauth/authorize?client_id={appKey}&amp;response_type=code&amp;redirect_uri=encodeURIComponent({redirectUri})&amp;scope={scope}&amp;state=123;
+	    </Payload>
+        <StatusCode>302</StatusCode>
+        <ReasonPhrase>OAuth Auth Redirect</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

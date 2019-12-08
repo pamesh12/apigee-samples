@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="SampleLoginPage">
+            <Condition>(proxy.pathsuffix MatchesPath "/login") and (request.verb = "GET")</Condition>
+            <Description/>
+            <Request>
+                <Step>
+                    <Condition>(request.queryparam.response_type EQUALS "code")</Condition>
+                    <FaultRules/>
+                    <Name>LoginPage</Name>
+                </Step>
+            </Request>
+        </Flow>
+        <Flow name="ValidateCredential">
+            <Condition>(proxy.pathsuffix MatchesPath "/login") and (request.verb = "POST")</Condition>
+            <Description/>
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>GetCredentials</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>ValidateCredential</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Condition>loginStatus = "false"</Condition>
+                    <Name>LoginPage</Name>
+                </Step>
+                <Step>
+                    <Condition>loginStatus = "true"</Condition>
+                    <Name>AuthCodeRequestMessage</Name>
+                </Step>
+                <Step>
+                    <Condition>loginStatus = "true"</Condition>
+                    <Name>RequestAuthCode</Name>
+                </Step>
+            </Response>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/samplelogin</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

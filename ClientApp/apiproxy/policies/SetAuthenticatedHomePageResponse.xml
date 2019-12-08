@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SetAuthenticatedHomePageResponse">
+    <DisplayName>SetAuthenticatedHomePageResponse</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Set>
+        <Payload contentType="text/html"><![CDATA[
+         <html>
+			<head>
+			<title>Token Response</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			</head>
+			<body bgcolor="#FFFFFF" text="#000000">
+				<table width="100%" border="2">
+					<tr>
+					    <td>
+					        Access token Response
+					    </td>
+						<td>
+						    {accessTokenResponse.content}
+						</td>
+					</tr>
+					<tr>
+					    <td>
+					        API Response
+					    </td>
+					    <td>
+					        {calloutResponse.content}
+					    </td>
+					</tr>
+				</table>
+				
+			</body>
+			</html>
+		]]></Payload>
+        <StatusCode>200</StatusCode>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo type="response" transport="http" createNew="true"/>
+</AssignMessage>

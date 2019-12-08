@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="Test">
+    <Basepaths>/test</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1574931442681</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>Test</DisplayName>
+    <LastModifiedAt>1575615902084</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:293dd9751fcdd24709fc5d5be35e851f98efdb2eb054fe134b581503d10fa94377355f798978ae5aa5c29b595c5fee85f8a12bbab823abbaa1879b17e28ca93c</ManifestVersion>
+    <Policies>
+        <Policy>Response</Policy>
+        <Policy>remove-header-authorization</Policy>
+        <Policy>verify-oauth-v2-access-token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

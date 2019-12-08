@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AuthCodeRequestMessage" version="SHA-512:1c648a5d587e5757c28ded5c4c9f82af050528262a5167cbcf26715df3f82537dc99a6efceda3adc9dd4e0dbbcc2f7b8f32b1c7d62bef2f834de5b876613a166"/>
+        <VersionInfo resourceName="GetCredentials" version="SHA-512:8feef57b6ee4f00b4cb5f8523f3db08162a1692bf215610bf46a035a2274ab1a031aeefa768c6993f934b34734a3b2250a439a5155e4d5d39be558fae0dcce15"/>
+        <VersionInfo resourceName="LoginPage" version="SHA-512:0c71e6380fe080f896984f30d6487c79e1a393acb022b242395daeaaed9c62dae5d74f5c1783a6a5ed24bc8a1fb0675a9d61ad88abe92177ca5c1b58d22f499c"/>
+        <VersionInfo resourceName="RequestAuthCode" version="SHA-512:8a19b846f574c7b983b46ca06766c5dac9672af59b5b9c898315156ab89067fd67198a633271a9ed515ae41e943a0135135d0e5846dee1226036df699251473f"/>
+        <VersionInfo resourceName="ValidateCredential" version="SHA-512:7a6c97de99b94a7a140a56ad09f052f3e634d26e0b76a9551569c90b2ef1785e0d12cbebb1f4b4511ed8218fefb7742a0054d79904f3268418f68c137a0a3a57"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:91afc4d7d2d616a8f30424727ba7197a64d2b176833a02f256a19b898965c2ddcd80524a317a8688f9ae306dee8fa5827cd9c6c6d825a516f0fc6db597a1197c"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://AuthCodeResponse.js" version="SHA-512:278362d59bbb3cfb5bffa056a5550d9f70bf28efcef4f3e394abfcb52efa959d2b23ca4e0d1b792e567d38758582abc4f9f0d2d46653a1fb79a011c2e593ded2"/>
+        <VersionInfo resourceName="jsc://ValidateCredential.js" version="SHA-512:2da4c568568f753048d06a1ab4f8e72f06b0025cdfcb742ca08b7b3fe45eae1dc267168837768bb49c5762a22ac6fb6c7bf3fbb0f3011c6ebc32b3d22505efda"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

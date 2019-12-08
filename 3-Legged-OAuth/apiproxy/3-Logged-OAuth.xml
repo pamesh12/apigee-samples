@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="3-Logged-OAuth">
+    <Basepaths>/oauth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1574926221576</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>3 Legged OAuth</Description>
+    <DisplayName>3-Logged-OAuth</DisplayName>
+    <LastModifiedAt>1575622138248</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:19ac649adfe19560cf7603d2c0d1661fcb135705f3e6bcd3ab9a2fa961ca40e5b332906fb85ba16662d9b176a1633207cbebf5488a1e994b0f8d8c61fef7bed0</ManifestVersion>
+    <Policies>
+        <Policy>AccessTokenRefresh</Policy>
+        <Policy>AccessTokenRequest</Policy>
+        <Policy>AccessTokenResponse</Policy>
+        <Policy>AccessTokenResponseRT</Policy>
+        <Policy>GenerateAuthorizationCode</Policy>
+        <Policy>LoginPage</Policy>
+        <Policy>Send404NotFoundResponse</Policy>
+        <Policy>SetAuthCodeParameters</Policy>
+        <Policy>SetValidTokenResponse</Policy>
+        <Policy>VerifyAccessToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://SetAuthCodeParameters.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

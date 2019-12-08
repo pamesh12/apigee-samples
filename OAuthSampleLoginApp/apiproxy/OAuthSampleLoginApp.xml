@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="OAuthSampleLoginApp">
+    <Basepaths>/samplelogin</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1575607206539</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>OAuthSampleLoginApp</DisplayName>
+    <LastModifiedAt>1575607206539</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:08a84202fb45fdc22dd274e97f24f43ca7cc3570d78dd09d8167c6b05c5e93a48709216072ec688a8abf411fc8dcacc430c519cba1b526d9b24fc97d33334cf2</ManifestVersion>
+    <Policies>
+        <Policy>AuthCodeRequestMessage</Policy>
+        <Policy>GetCredentials</Policy>
+        <Policy>LoginPage</Policy>
+        <Policy>RequestAuthCode</Policy>
+        <Policy>ValidateCredential</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://AuthCodeResponse.js</Resource>
+        <Resource>jsc://ValidateCredential.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

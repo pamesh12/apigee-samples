@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="RequestAccessToken">
+    <DisplayName>RequestAccessToken</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="calloutRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>accessTokenResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://{config.organization}-{config.environment}.{config.domain}/oauth/token</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

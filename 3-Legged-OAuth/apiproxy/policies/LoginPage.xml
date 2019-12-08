@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="LoginPage">
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="text/html"><![CDATA[
+      <!DOCTYPE html>
+<html>
+   <head>
+        <style>
+            .button {
+              background-color: #008CBA;
+              border: none;
+              color: white;
+              cursor:pointer;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+            }
+        </style>
+
+      <script>
+         var BASEURL="http://pamesh12-eval-test.apigee.net";
+         var REDIRECT='{request.queryparam.redirect_uri}';
+         var RESPONSE_TYPE='{request.queryparam.response_type}';
+         var CLIENT_ID='{request.queryparam.client_id}';
+         var SCOPE='{request.queryparam.scope}';
+        
+         function login()
+         {
+         window.location.href=BASEURL+'/samplelogin/login?client_id='+CLIENT_ID+'&scope='+SCOPE+'&state=123&response_type='+RESPONSE_TYPE+'&redirect_uri='+REDIRECT;
+         }
+      </script>
+   </head>
+   <body>
+        <table width="100%" border="0">
+			<tr>
+			    <td valign="middle" align="center" height="700">
+                    <input type="button" class="button" value="Click to Login" onclick="login()" />
+                </td>
+            </tr>
+        </table>
+   </body>
+</html>
+      ]]></Payload>
+            <StatusCode>200</StatusCode>
+            <ReasonPhrase>OK</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</RaiseFault>

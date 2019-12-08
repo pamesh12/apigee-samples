@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SetConfigurationVariables">
+    <DisplayName>SetConfigurationVariables</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <AssignVariable>
+        <Name>appKey</Name>
+        <Value>gTLvZeCyoxD6PfnW9SGJNooSFPZajw4m</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>appSecret</Name>
+        <Value>mqGLkbcpcI3j81MA</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>scope</Name>
+        <Value>test</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>redirectUri</Name>
+        <Value>http://pamesh12-eval-test.apigee.net/web/callback</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>config.environment</Name>
+        <Value>test</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>config.organization</Name>
+        <Value>pamesh12-eval</Value>
+    </AssignVariable>
+    <!-- On prem customers may need to change the domain. Cloud users can leave the domain as is. -->
+    <AssignVariable>
+        <Name>config.domain</Name>
+        <Value>apigee.net</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>config.protocol</Name>
+        <Value>http</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+</AssignMessage>
