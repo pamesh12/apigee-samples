@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache async="false" continueOnError="false" enabled="true" name="SetAccessTokenCache">
+    <DisplayName>SetAccessTokenCache</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix>ExternalOAuth_</Prefix>
+        <KeyFragment>{ext.clientId}</KeyFragment>
+    </CacheKey>
+    <Scope>Exclusive</Scope>
+    <CacheResource>ExtApiCache</CacheResource>
+    <ExpirySettings>
+        <TimeoutInSec>3600</TimeoutInSec>
+    </ExpirySettings>
+    <Source>access_token</Source>
+</PopulateCache>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="GenerateToken" version="SHA-512:2e6f4a2e4d46ae638aab4dd147cb7ff7d7baebb4142b5d84094508a4ab3d4b1e0c8b344aa0f9a2446701909cb2f9493161e8a7243981af3e3ba502bc8f602c5b"/>
+        <VersionInfo resourceName="VerifyAPIKey" version="SHA-512:a5380344933bf28be1360764c4ef9b3f8598fd5a03011fa58c20b8cf944b2e6b476a7fe2db1b27e41c9a72a321c6268a93317705821b2987a517bffc18887d0b"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:89a1e21ceb19f7af16544b2a2ddb796c0cfb0677d67a36a7a382923fb0e86f3f0229ac36a096531ea80f2ff4321901679a684d59a7dd3e3b5ce0a0f7a24885a3"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

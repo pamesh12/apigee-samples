@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="ExternalOAuthApi">
+    <Basepaths>/externaloauthapi</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576142582125</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>API for demonstrating 2 legged OAuth from External System</Description>
+    <DisplayName>ExternalOAuthApi</DisplayName>
+    <LastModifiedAt>1576143726727</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:755eed169a14235ea875fe5776a36108850286dffb90782e8442704b075ba0789250a0a719697706760e13da85f5c50bf7d5e8d232a061680c6b8928858435b2</ManifestVersion>
+    <Policies>
+        <Policy>GenerateToken</Policy>
+        <Policy>VerifyAPIKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

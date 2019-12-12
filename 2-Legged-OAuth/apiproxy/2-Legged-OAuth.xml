@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="2-Legged-OAuth">
+    <Basepaths>/clientoauth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576144374918</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>2-Legged OAuth Client_crendential</Description>
+    <DisplayName>2-Legged-OAuth</DisplayName>
+    <LastModifiedAt>1576144506514</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:b56e29dcd3512a971cb564ff4109a79a49e2cc6656c9d229b9ce0e00fbcd6a795da7cff71043e2cae351690c3630d8e7e9273a1b76e96cf9918a2a0267742b40</ManifestVersion>
+    <Policies>
+        <Policy>GenerateToken</Policy>
+        <Policy>verify-api-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

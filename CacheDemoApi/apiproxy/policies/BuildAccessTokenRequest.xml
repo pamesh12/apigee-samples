@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="BuildAccessTokenRequest">
+    <DisplayName>BuildAccessTokenRequest</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="Accept">application/json</Header>
+        </Headers>
+        <FormParams>
+            <FormParam name="grant_type">client_credentials</FormParam>
+            <FormParam name="client_id">ZCEk72XewNHAFALMq26cakp3pvGF2vVG</FormParam>
+            <FormParam name="client_secret">HMpwSifJjwq42ifV</FormParam>
+        </FormParams>
+        <Verb>POST</Verb>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo type="request" transport="http" createNew="true">OAuthAccessTokenRequest</AssignTo>
+</AssignMessage>

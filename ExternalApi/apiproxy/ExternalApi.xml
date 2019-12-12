@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="ExternalApi">
+    <Basepaths>/externalapi</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576142148759</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>Dummy Api to demonstrate response caching of OAuth Token</Description>
+    <DisplayName>ExternalApi</DisplayName>
+    <LastModifiedAt>1576157356815</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:45dddae3ec745b06e5ef3d5a832d17060471a9e3e3d8138fccced7af1206c537d969fefb7bab4d9d32b3b7943a77bc812f88cb88811278c21d57d2982bf5a24c</ManifestVersion>
+    <Policies>
+        <Policy>AM-Response</Policy>
+        <Policy>remove-header-authorization</Policy>
+        <Policy>verify-oauth-v2-access-token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

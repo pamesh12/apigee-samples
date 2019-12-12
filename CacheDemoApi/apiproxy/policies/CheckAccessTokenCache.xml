@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache async="false" continueOnError="false" enabled="true" name="CheckAccessTokenCache">
+    <DisplayName>CheckAccessTokenCache</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix>ExternalOAuth_</Prefix>
+        <KeyFragment>{ext.clientId}</KeyFragment>
+    </CacheKey>
+    <CacheResource>ExtApiCache</CacheResource>
+    <Scope>Exclusive</Scope>
+    <AssignTo>external.oauth.cached.accessToken</AssignTo>
+</LookupCache>

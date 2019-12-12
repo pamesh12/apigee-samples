@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="BuildAccessTokenRequest" version="SHA-512:4b463a3564492343406adfc263069ea2cf1f8daf06ec7c1b180f9749781e303d6a2feac4c45e611614d9e553522a724b308028a0ba027c2d160999f7687401e7"/>
+        <VersionInfo resourceName="CheckAccessTokenCache" version="SHA-512:dbf1021efec0d32aef60692245243e503e944f35fc4ad0c9635cf73f0493faca8d910b4a6309e5230b27dfa50d21476861ec78fda93830d1b38edf9eb8674ef5"/>
+        <VersionInfo resourceName="ExtractAccessToken" version="SHA-512:fbee21f408d46b425da6ea769b77a63afce62ace358e7d2e64e406d4b05bab20ce56088dd8d2318b61dcf7a74c0f40d4e0587aad2c86dcd5c7a49c9a7b355523"/>
+        <VersionInfo resourceName="GetCredentials" version="SHA-512:5fe67e5eabc3312405493667ff67b0b4296bb45a0e231c9dbec21dcb86a2f85f4301d24f5f75432bae2927c73a2758a9fc7cc07ba2f1861f477e3b12b87d7b91"/>
+        <VersionInfo resourceName="GetOAuthToken" version="SHA-512:36b47fab8c99e8e4f7989c7c27245a973b34148c17450708e0c2acac5ef0890fa4d054cec75af6f592a53c241cc2296c9a2ac6cc1f0db5b82d4bb14b3265e7d1"/>
+        <VersionInfo resourceName="SetAccessToken" version="SHA-512:52266fdf956f5fc3e5bb198d0055a7531a50bcd19cd4d6e01edd995dc26acaac1548e14048d7d6b6475664ad48b48fc156edcc54027cb535f698b150c95112ce"/>
+        <VersionInfo resourceName="SetAccessTokenCache" version="SHA-512:84845d57567bbeacdab2e522cc353435c2b6f975bb2a5a50243318e457da7cbede4646fb096363554e82ea3b23c19f52e74e16e5108cd007736993627cf54e44"/>
+        <VersionInfo resourceName="SetAccessTokenFromCache" version="SHA-512:99471367c794231089601007f97472bee1c39a3cfeeb8d4b000c7c3a8fff8376388633de70dbce5598256dc270de8ff6a5d6d26b68414df0b933b055313256cb"/>
+        <VersionInfo resourceName="remove-header-authorization" version="SHA-512:bb51e553b4b66ee4313fbfc0eaa76f08f3db66f9bd05cce9a1dc6542bada0501291719372fb4468a0b7f85ecceaaf0f8a0a397560a14b05f32e87d95423befb7"/>
+        <VersionInfo resourceName="verify-oauth-v2-access-token" version="SHA-512:be186ad133f93aafcac3d31bcb907dc849e4d8d10dadc63132cec9986bb306f937d7e9786a40be6ba66e04f4239189c3197d9df3c0ccbb30d79b4bd70231894e"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4f560a7c17081ec53779e8158360b18239fa23db4aa3da328b9ae416e776fc51be27cd0c2ab7611775aa634ad50909010623b446debca78f4ddd7bc0de3f2e1b"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:28fe8c8d68f09fc4c4f38ec474f05214925397c7adec2c5bc2c63af560fa5b8f159611ac65b16512784e0c3380cc97bf28d1a0697b4b98f202a72fe2f81ecbbc"/>
+    </TargetEndpoints>
+</Manifest>

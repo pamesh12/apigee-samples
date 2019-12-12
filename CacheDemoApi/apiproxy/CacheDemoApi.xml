@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="CacheDemoApi">
+    <Basepaths>/cachedemoapi</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576144286350</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>CacheDemoApi</DisplayName>
+    <LastModifiedAt>1576157529446</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:0c4039eddea3161896409a244a481260cb44149ba614297bd7aeefb379b500adbb85e1a0587cdcd9d60b81407a37675f4fa500cf159b60652ef089a16cb02560</ManifestVersion>
+    <Policies>
+        <Policy>BuildAccessTokenRequest</Policy>
+        <Policy>CheckAccessTokenCache</Policy>
+        <Policy>ExtractAccessToken</Policy>
+        <Policy>GetCredentials</Policy>
+        <Policy>GetOAuthToken</Policy>
+        <Policy>SetAccessToken</Policy>
+        <Policy>SetAccessTokenCache</Policy>
+        <Policy>SetAccessTokenFromCache</Policy>
+        <Policy>remove-header-authorization</Policy>
+        <Policy>verify-oauth-v2-access-token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
