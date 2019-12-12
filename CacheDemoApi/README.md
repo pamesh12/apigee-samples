@@ -2,7 +2,7 @@ Demo API to demonstrate caching of OAuth Token received from External API and us
 
 **API Flow**
 
-Client (CacheDemoApi) --> Apigee API(secured by OAuth) --> External API (secured by OAuth)
+Client --> Apigee API secured by OAuth (CacheDemoApi) --> External API secured by OAuth (ExternalApi)
 
 **Dependent APIs**
 1. [2-Legged-OAuth](../2-Legged-OAuth) - API to get OAuth token for CacheDemoAPI.
