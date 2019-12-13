@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="add-cors" version="SHA-512:08cc2ef69b08ee73467f7be74960047faa490fcc61ebba744cc1436358ed8068b052ee8c6e101ad00a5d54633c92d8195f7ed624372a59614265f0e515a1b5a1"/>
+        <VersionInfo resourceName="impose-quota" version="SHA-512:c9fa343c043ee2a736b86ede60733f5c27b63e67d9e337d35098a3379ae00b846762d1d13a873cc436d3faf9c7c8dfebf14daf792cf47ae2c88586651e056f57"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:69128a46b0bcb3fbfdd8065e3ffa174381b4edd720e10464163aac02dd26fdc8f58a692fed757f15fd7a9b210793005aa820b4d62555d8ccee93bce722ce96bb"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="hosted://app.yaml" version="SHA-512:07a0053084a5fefce52afce7d4d6a2a82b9cc3273c444426d42bca3bdf9debf6edca9eb970a22eb69d526915fe5074ce96f4358022c8ee8d5893c25eda03a44b"/>
+        <VersionInfo resourceName="hosted://hmac.js" version="SHA-512:e621c7279cb7416c52930ad8a088f6dddc051caba90a109521171bba49999c43d2af545b54a7ca32eede84cbe2ae0896ae90bd1d9cc382a52a6160f6f28e562c"/>
+        <VersionInfo resourceName="hosted://index.js" version="SHA-512:4d4fb6a6014ed3f53ce0f2c88bbb92bae7cc6f6b18272a77061dcb87d9ea20e52211f2dea41947f532fcea29d5f481b005700ae1e4583e949096f73a4f35134b"/>
+        <VersionInfo resourceName="hosted://package.json" version="SHA-512:922f2897b72d3e6c27686437b5dc3c60f530ea2600e887773b005257f30d3e696642ded07d4b36709af286dda1ef9aed4c4f9b457e614a6a7e8be80262425ba1"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:9567ed92e26bcd44b27be99e5ad88c17cef77011cea504c5c7bafd83c8fa2d9be96a71bb87adedd82d0e3a5269b704c6657d7e4ae6b7e0eea80052a78d6e90c6"/>
+    </TargetEndpoints>
+</Manifest>

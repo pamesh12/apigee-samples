@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="NodeApp">
+    <Basepaths>/nodeapp</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576235089604</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>NodeApp</DisplayName>
+    <HostedManifestVersion>SHA-512:9cf4853f58f8d539f8319e463a1e35d4b1f72c3e606f708ecc1319887a1f6b7cada5575a8ee54478e8f95c2beb99748b85623e29b72e8bdd1a88f9b9f28399d5:ap-northeast-1</HostedManifestVersion>
+    <LastModifiedAt>1576235089604</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:a849d4d25769ca8d3798b3536fb8b2a2a75a95ce6c25fafacf76ece9b707715e74ebfbe87364f85bfbe4fa2143642e2edf74479d0de3982c62687e46924b83ee</ManifestVersion>
+    <Policies>
+        <Policy>add-cors</Policy>
+        <Policy>impose-quota</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>hosted://app.yaml</Resource>
+        <Resource>hosted://hmac.js</Resource>
+        <Resource>hosted://index.js</Resource>
+        <Resource>hosted://package.json</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

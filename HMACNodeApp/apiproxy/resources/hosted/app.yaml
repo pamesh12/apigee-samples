@@ -1,0 +1,15 @@
+runtime: node
+runtimeVersion: 8
+env:
+  - name: NODE_ENV
+    value: production
+  - name: LOG_LEVEL
+    value: 3
+  - name: macKeyId
+    valueRef:
+       name: points
+       key: macKeyId
+  - name: macKey
+    valueRef:
+       name: points
+       key: macKey       
