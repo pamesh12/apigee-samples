@@ -10,8 +10,9 @@ Client --> Apigee API secured by OAuth (CacheDemoApi) --> External API secured b
 1. [ExternalApi](../ExternalApi) - Dmeo API for external API secured with OAuth.
 
 **Flow for Apigee API Caching.**
-1. **LookupCache** policy is done before calling external OAuth API.
-1. If cache returns null, call to external OAuth API is done and access token in response is cached using **PopulateCache** policy.
+1. **LookupCache** policy is used to look for access token before calling external OAuth API.
+1. If cache returns null, call to external OAuth API is made.
+1. Access token from above step in response is cached using **PopulateCache** policy.
 1. If cache returns value, same is used and call to External OAuth API is skipped.
 
-**Note Cache expiration time must be set less than token exipres_in value.**
+**Note: Cache expiration time must be set less than token exipres_in value.**
