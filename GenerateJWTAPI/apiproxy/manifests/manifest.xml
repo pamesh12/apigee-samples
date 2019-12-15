@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Generate-JWT" version="SHA-512:41b8b7e29f5564d08ccc65fa6a7c6cb4aa78c1240cfb09da1bee50d4fefc81f4abc9c6687447d33595b2f263a62d4d3e5ca417e99d352050855be3ea02dc3f62"/>
+        <VersionInfo resourceName="SendJWT" version="SHA-512:068e0d261b446e99289eddf418f00c7864bd74f6885cbed6592fe9a85f3cb7bc265e239f94658aa1b8aecac366d663502091d7cd712b84dc180896dfac927277"/>
+        <VersionInfo resourceName="SetKey" version="SHA-512:da0ef7625210d732a65cfde283b24ec3e8c57f6ee6f75859a6b7180e035ded0fd6a82c404275ec88701ca2009d5ddf998a6b40ecdd432301ffadf92444db0a39"/>
+        <VersionInfo resourceName="remove-query-param-apikey" version="SHA-512:fedac28ff50d0bca86015a692d1b6e093718a7c700308eebb8b74c4b95a71815a7bc9dd92d2809176c881a6affe89177a87205bb9ae618083036394d199b3d05"/>
+        <VersionInfo resourceName="verify-api-key" version="SHA-512:6595defb9a0b6d7fce111a9fe959f5e8a7aa03ffb301373c4c4e20e814648b42d5858631e95e4a8d698b5fe2139390c252e9011d9f1be8c3a35de73c1c269f97"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:39b33aea0c4c1f0a8395f26c7d3ec9f66b8072eacee65137965c4c9d59d10934d8c704df987c907b6967f650ccfc420537a3d0b6c1ce00add514955eb16e7b87"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

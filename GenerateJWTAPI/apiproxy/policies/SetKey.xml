@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SetKey">
+    <DisplayName>SetKey</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>private.secretKey</Name>
+        <Value>A2F17D6D65BACDFEEE458ACE589B5</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

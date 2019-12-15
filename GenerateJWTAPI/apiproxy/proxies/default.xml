@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>verify-api-key</Name>
+            </Step>
+            <Step>
+                <Name>remove-query-param-apikey</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="JWT">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>SetKey</Name>
+                </Step>
+                <Step>
+                    <Name>Generate-JWT</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>SendJWT</Name>
+                </Step>
+            </Response>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/generatejwt</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>
