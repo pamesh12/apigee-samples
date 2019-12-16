@@ -1,7 +1,15 @@
 API to generate JWT token using HMAC-SHA-256 Algorithm.
 
-* basepath:/generateJWT
-* path : /
+* basepath:/jwt/generate
+* path : /hmac
+* QueryParam : apikey 
+* Method: GET
+* Response : `{jwt-token : <generated JWT token>}`
+
+API to generate JWT token using RSA Algorithm.
+
+* basepath:/jwt/generate
+* path : /rsa256
 * QueryParam : apikey 
 * Method: GET
 * Response : `{jwt-token : <generated JWT token>}`
