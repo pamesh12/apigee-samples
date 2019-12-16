@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <APIProxy revision="2" name="GenerateJWT">
-    <Basepaths>/generatejwt</Basepaths>
+    <Basepaths>/jwt/generate</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1576386397131</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>API to generate JWT and send it</Description>
     <DisplayName>GenerateJWT</DisplayName>
-    <LastModifiedAt>1576387674772</LastModifiedAt>
+    <LastModifiedAt>1576475290964</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:5c2e66280fed65b367e27e2d5acf0ffb6eae9f3c76c30daa990e825d6e60655e96fd3d5dea1280d03184c8cdfde3404a5abac5888d77504222c49720d00f58a4</ManifestVersion>
+    <ManifestVersion>SHA-512:15d0717303cf048b205e8d24db101549311d492ed7aab5396a0ab710a14be4082dc6ee3542f8fd4d5fb9f83b245c1d34967345a32080a80921e242c1e45b9604</ManifestVersion>
     <Policies>
         <Policy>Generate-JWT</Policy>
+        <Policy>GenerateJWT-RS256</Policy>
+        <Policy>GetPrivateKey</Policy>
+        <Policy>JWT-Response-RSA256</Policy>
         <Policy>SendJWT</Policy>
         <Policy>SetKey</Policy>
         <Policy>remove-query-param-apikey</Policy>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="JWT-Response-RSA256">
+    <DisplayName>JWT-Response-RSA256</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload variablePrefix="%" variableSuffix="#" contentType="application/json">
+            {
+                "jwt-token" : %jwt-rsa256-variable#
+            }
+            
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

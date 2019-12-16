@@ -33,10 +33,28 @@
                     <Name>SendJWT</Name>
                 </Step>
             </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/hmac") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="JWT-256">
+            <Description>JWT Flow for RSA 256</Description>
+            <Request>
+                <Step>
+                    <Name>GetPrivateKey</Name>
+                </Step>
+                <Step>
+                    <Name>GenerateJWT-RS256</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>JWT-Response-RSA256</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/rsa256") and (request.verb = "GET")</Condition>
         </Flow>
     </Flows>
     <HTTPProxyConnection>
-        <BasePath>/generatejwt</BasePath>
+        <BasePath>/jwt/generate</BasePath>
         <Properties/>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>

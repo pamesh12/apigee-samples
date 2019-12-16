@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateJWT async="false" continueOnError="false" enabled="true" name="GenerateJWT-RS256">
+    <DisplayName>GenerateJWT-RS256</DisplayName>
+    <Algorithm>RS256</Algorithm>
+    <PrivateKey>
+        <Value ref="private.key"/>
+    </PrivateKey>
+    <Subject>Subject RSA256</Subject>
+    <Issuer>urn://apigee-edge-JWT-policy-test</Issuer>
+    <Audience>audience-RSA256</Audience>
+    <ExpiresIn>8h</ExpiresIn>
+    <AdditionalClaims>
+        <Claim name="claim256" type="string">claim256</Claim>
+    </AdditionalClaims>
+    <OutputVariable>jwt-rsa256-variable</OutputVariable>
+</GenerateJWT>
