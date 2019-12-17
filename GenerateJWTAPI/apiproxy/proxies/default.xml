@@ -29,9 +29,9 @@
                 </Step>
             </Request>
             <Response>
-                <Step>
+                <!--<Step>
                     <Name>SendJWT</Name>
-                </Step>
+                </Step>-->
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/hmac") and (request.verb = "GET")</Condition>
         </Flow>
@@ -46,9 +46,9 @@
                 </Step>
             </Request>
             <Response>
-                <Step>
+                <!--<Step>
                     <Name>JWT-Response-RSA256</Name>
-                </Step>
+                </Step>-->
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/rsa256") and (request.verb = "GET")</Condition>
         </Flow>
@@ -58,5 +58,7 @@
         <Properties/>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
-    <RouteRule name="noroute"/>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
 </ProxyEndpoint>

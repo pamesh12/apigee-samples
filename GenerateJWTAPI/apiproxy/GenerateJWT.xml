@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="2" name="GenerateJWT">
+<APIProxy revision="6" name="GenerateJWT">
     <Basepaths>/jwt/generate</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1576386397131</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>API to generate JWT and send it</Description>
     <DisplayName>GenerateJWT</DisplayName>
-    <LastModifiedAt>1576475290964</LastModifiedAt>
+    <LastModifiedAt>1576590111435</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:15d0717303cf048b205e8d24db101549311d492ed7aab5396a0ab710a14be4082dc6ee3542f8fd4d5fb9f83b245c1d34967345a32080a80921e242c1e45b9604</ManifestVersion>
+    <ManifestVersion>SHA-512:c57c5620b0560b629627326afe5f39021340d60fababcbd27511bd974cfc149fa8c31307424e0b9883abcec767d58cb9620ee697aa746afb1335455d7aded4c1</ManifestVersion>
     <Policies>
+        <Policy>AM-SetBackendAPIPath</Policy>
         <Policy>Generate-JWT</Policy>
         <Policy>GenerateJWT-RS256</Policy>
         <Policy>GetPrivateKey</Policy>
-        <Policy>JWT-Response-RSA256</Policy>
-        <Policy>SendJWT</Policy>
         <Policy>SetKey</Policy>
         <Policy>remove-query-param-apikey</Policy>
         <Policy>verify-api-key</Policy>
@@ -25,5 +24,7 @@
     <Resources/>
     <Spec></Spec>
     <TargetServers/>
-    <TargetEndpoints/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
 </APIProxy>

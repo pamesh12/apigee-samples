@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Response">
+    <DisplayName>AM-Response</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload variablePrefix="#" variableSuffix="$" contentType="application/json">
+            {
+                "Response" : "JWT Verified",
+                "Subject"  : "#jwt.jwtSubject$",
+                "type": "#jwt.header.type$"
+                
+            }
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>

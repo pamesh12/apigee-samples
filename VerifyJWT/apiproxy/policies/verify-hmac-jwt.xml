@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<GenerateJWT async="false" continueOnError="false" enabled="true" name="Generate-JWT">
-    <DisplayName>Generate JWT</DisplayName>
+<VerifyJWT async="false" continueOnError="false" enabled="true" name="verify-hmac-jwt">
+    <DisplayName>verify-hmac-jwt</DisplayName>
     <Algorithm>HS256</Algorithm>
+    <Source>request.header.jwt</Source>
     <SecretKey>
-        <Value ref="private.secretKey"/>
+        <Value ref="private.hmac.key"/>
     </SecretKey>
     <Subject>SubjectHMAC</Subject>
     <Issuer>urn://apigee-edge-JWT-policy-test</Issuer>
     <Audience>audience</Audience>
-    <ExpiresIn>8h</ExpiresIn>
     <AdditionalClaims>
         <Claim name="claim1" type="string">claim1</Claim>
     </AdditionalClaims>
-    <OutputVariable>jwt-variable</OutputVariable>
-</GenerateJWT>
+</VerifyJWT>

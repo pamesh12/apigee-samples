@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
-        <VersionInfo resourceName="Generate-JWT" version="SHA-512:e16057add7e269abb617a176c6e691dd7b9f21f3356210cb064db8c5085afff9afba80bc3d35e069924a02c1ef6c8a5e3c2e24a0f2a7dbb6b0fd46e2d5deeb7c"/>
-        <VersionInfo resourceName="GenerateJWT-RS256" version="SHA-512:3aa48187411d003e87a7f8e6b9c98c8dc397e196ade97a3836406a1d200c93788ac754777f19912165766ca247acb913f2c58ff6f405e3c258e231dcbee2cc78"/>
+        <VersionInfo resourceName="AM-SetBackendAPIPath" version="SHA-512:33145575b4c320e1fefb2ae92ba8502ff1042f309651d04493ecf910fee026f729e7cc6d4279a6525018be3cf1fcae2d8ad9dd85aca3945e3e72d1b416283adb"/>
+        <VersionInfo resourceName="Generate-JWT" version="SHA-512:14b409e74f3cd536bca11647dc03d9ee0d234787982000b2d6faf001060778d8442a7475fb52bac527f3f58982c5354cbf82435c6814c4e1d8adb1ebb86aef1a"/>
+        <VersionInfo resourceName="GenerateJWT-RS256" version="SHA-512:afda4593262224524d9b3cdd06b840ba3dd2be5f35efbb2fc795fcbcacc3f432aa36d410f2036a7a6166c14b29d7f66f9c72f65b61d8b7aae2800ccd320b3310"/>
         <VersionInfo resourceName="GetPrivateKey" version="SHA-512:cfb47c1e7d649d7ee78fea1b9091bf9ebd0ca24b52c2134e9339183f6d2222e8f2d32056b1d4e8f6a53e246b4611dff61775374983cab80a3d51a2965abcc753"/>
-        <VersionInfo resourceName="JWT-Response-RSA256" version="SHA-512:449cbfe5fd6d8c034a306c4ee2ee227a9f6d658c4c3731d0b6dff058a17b84a9219fa909ea374b62ca3edce446a74b06b1572e29efdfc8bac77ea3dc1990c9de"/>
-        <VersionInfo resourceName="SendJWT" version="SHA-512:068e0d261b446e99289eddf418f00c7864bd74f6885cbed6592fe9a85f3cb7bc265e239f94658aa1b8aecac366d663502091d7cd712b84dc180896dfac927277"/>
         <VersionInfo resourceName="SetKey" version="SHA-512:da0ef7625210d732a65cfde283b24ec3e8c57f6ee6f75859a6b7180e035ded0fd6a82c404275ec88701ca2009d5ddf998a6b40ecdd432301ffadf92444db0a39"/>
         <VersionInfo resourceName="remove-query-param-apikey" version="SHA-512:fedac28ff50d0bca86015a692d1b6e093718a7c700308eebb8b74c4b95a71815a7bc9dd92d2809176c881a6affe89177a87205bb9ae618083036394d199b3d05"/>
         <VersionInfo resourceName="verify-api-key" version="SHA-512:6595defb9a0b6d7fce111a9fe959f5e8a7aa03ffb301373c4c4e20e814648b42d5858631e95e4a8d698b5fe2139390c252e9011d9f1be8c3a35de73c1c269f97"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:26cff6066bec6031461e2f6236a50feefb31f8dc1a64b994f57742f47bd31e0b8b46bec9e2636d98b3dead1c576694e3ed39ce967fffcc432c65c99c2a028922"/>
+        <VersionInfo resourceName="default" version="SHA-512:d317035164c72781167edb4a1259abb4e3c5936135c0ad453c2490a011c7ca9cba7b410d14de19a37fd08fd7a2b0fb837c7b4795f6713f412b58444c71ce4211"/>
     </ProxyEndpoints>
     <Resources/>
     <SharedFlows/>
-    <TargetEndpoints/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:75c7c90d29bfcf4643f5b60780be4e230ff16f9253be83bace245dff4de4c5fe9b21ad8cd3531efae5f0f5c92a48ce92caf9673fd92036f0c3e0bacdc00d6cd9"/>
+    </TargetEndpoints>
 </Manifest>

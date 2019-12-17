@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-Response" version="SHA-512:b7292b09639ae7f9a954d36dee2698a696bd311c882c9b28d0a53845fe5b20e4028a41be31f32e838ca313faf1f9830e698072868ae7afa85c25c3b536677514"/>
+        <VersionInfo resourceName="ExtractJWTVariables" version="SHA-512:1f92dc7e91a6a3adb6de7b63113cb5079bfbb271cb87852805bfb0c7788dfd5de9a90b3ba1d14a96b0525907b4b04aaf9fc27fa571125f330bb5f0a857b079b6"/>
+        <VersionInfo resourceName="SetKeys" version="SHA-512:cbd1919120fc19d34ad1a6cd0a3ecc96c3c30eb4d2b6d2c2f51f1d79a579fbef69cd71730d60cb0bbe34c0600bebad5e94a62488bdb21a1c859cecbefccaf31a"/>
+        <VersionInfo resourceName="verify-hmac-jwt" version="SHA-512:897112bc23624320b7996f3e24a937fc8428722333d58800bddc48f720b67e90772002a04db45173fd007fda92278623cf0522bd0146c8fac1d2d108dc8d5b96"/>
+        <VersionInfo resourceName="verify-rsa-jwt" version="SHA-512:d95a3072694c5ba18aabb475fbccea7862a48cc5575abd52143ce808bbff75806a641360eeb732f6161fcf5c1fce1e68b3f0bb973cb56c3d725c9993faeb91c2"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:0a98311d9eb0ca02329f83ef7e04cf61509125b85fe47d82b6a08463feb32917e10532cb4a7bfee82545f8e342abeb8a247ac7f1779ee7e3504ef02295c9f14e"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://ExtractJWTVariables.js" version="SHA-512:2c8c609a65c4838baef5659be065cf9a2b0ae5f323d54af25fa24a448a5d1b6cab5477857bdad75e802692c5c40b71836c310da30da04be1db2e578ff39c8da9"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

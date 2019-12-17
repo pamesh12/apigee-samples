@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="VerifyJWT">
+    <Basepaths>/verify/jwt</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576586607582</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>API to demonstrate JWT verification</Description>
+    <DisplayName>VerifyJWT</DisplayName>
+    <LastModifiedAt>1576590195735</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:25b5d252b4f93fe28a1f33c014f366d7f1e8bfd2e496168fc719cb4ffbe8c170e66a868da0bf09448501eea921f3b0178733b33b92fab1ba657ce9f6ebaab33c</ManifestVersion>
+    <Policies>
+        <Policy>AM-Response</Policy>
+        <Policy>ExtractJWTVariables</Policy>
+        <Policy>SetKeys</Policy>
+        <Policy>verify-hmac-jwt</Policy>
+        <Policy>verify-rsa-jwt</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://ExtractJWTVariables.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>
