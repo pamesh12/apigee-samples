@@ -22,7 +22,8 @@
     	    "redirect_uri":"%request.formparam.redirect_uri#",
     	    "scope":"%request.formparam.scope#",
     	    "state":"%request.formparam.state#",
-    	    "response_type":"%request.formparam.response_type#"
+    	    "response_type":"%request.formparam.response_type#",
+    	    "username" : "%actualUserName#"
     	    }
     	</Payload>
         <Verb>POST</Verb>

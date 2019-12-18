@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
-        <VersionInfo resourceName="AuthCodeRequestMessage" version="SHA-512:1c648a5d587e5757c28ded5c4c9f82af050528262a5167cbcf26715df3f82537dc99a6efceda3adc9dd4e0dbbcc2f7b8f32b1c7d62bef2f834de5b876613a166"/>
+        <VersionInfo resourceName="AuthCodeRequestMessage" version="SHA-512:d00ac93ce87a480697408520500907c6b40b84505fd725f504baf9e736badd37b43e22aca2a405127823ffe83ba494a70046e18632f3583d1cbb3dab00af1c04"/>
         <VersionInfo resourceName="GetCredentials" version="SHA-512:8feef57b6ee4f00b4cb5f8523f3db08162a1692bf215610bf46a035a2274ab1a031aeefa768c6993f934b34734a3b2250a439a5155e4d5d39be558fae0dcce15"/>
         <VersionInfo resourceName="LoginPage" version="SHA-512:0c71e6380fe080f896984f30d6487c79e1a393acb022b242395daeaaed9c62dae5d74f5c1783a6a5ed24bc8a1fb0675a9d61ad88abe92177ca5c1b58d22f499c"/>
         <VersionInfo resourceName="RequestAuthCode" version="SHA-512:8a19b846f574c7b983b46ca06766c5dac9672af59b5b9c898315156ab89067fd67198a633271a9ed515ae41e943a0135135d0e5846dee1226036df699251473f"/>

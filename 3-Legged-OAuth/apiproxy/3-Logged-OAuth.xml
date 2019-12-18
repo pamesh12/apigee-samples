@@ -6,9 +6,9 @@
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>3 Legged OAuth</Description>
     <DisplayName>3-Logged-OAuth</DisplayName>
-    <LastModifiedAt>1575622138248</LastModifiedAt>
+    <LastModifiedAt>1576647995796</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:19ac649adfe19560cf7603d2c0d1661fcb135705f3e6bcd3ab9a2fa961ca40e5b332906fb85ba16662d9b176a1633207cbebf5488a1e994b0f8d8c61fef7bed0</ManifestVersion>
+    <ManifestVersion>SHA-512:d46cfa56eaa2fd23601145874029d149fc516947a15c9bac32c9255aa1c0b1295e091577f7938a26ef9a3175a75cdd8090639fe3d2c8a3b380f3484fa969ff62</ManifestVersion>
     <Policies>
         <Policy>AccessTokenRefresh</Policy>
         <Policy>AccessTokenRequest</Policy>

@@ -5,6 +5,7 @@
     <ClientId>request.queryparam.client_id</ClientId>
     <RedirectUri>request.queryparam.redirect_uri</RedirectUri>
     <Scope>request.queryparam.scope</Scope>
+    <State>request.queryparam.state</State>
     <GenerateResponse enabled="true"/>
     <Attributes>
         <Attribute name="username" ref="request.queryparam.username">NA</Attribute>

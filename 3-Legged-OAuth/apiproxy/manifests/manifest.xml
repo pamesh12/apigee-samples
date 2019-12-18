@@ -5,7 +5,7 @@
         <VersionInfo resourceName="AccessTokenRequest" version="SHA-512:ad58b6e388f06f7177efba297e89100050c9bc97f3e426765bea0f0f3c475f0fc94b7073c1daca23c020b91b72e204259cd85759b1ee330df3c8218590387c2f"/>
         <VersionInfo resourceName="AccessTokenResponse" version="SHA-512:f54fc8eccc94472d0bdb9a4aa00cd15b1c8ea7fad0e885f2466ac6272fb9f3d2829bb2bf714fafbbcefd1e320cb038ae5b1535eb8c294195110b294cb73fbe4b"/>
         <VersionInfo resourceName="AccessTokenResponseRT" version="SHA-512:ac442de0eaac1e3a7c18086ab96fafe75b0ecbc53a5732aeef86edf985995fe66048dda0185d8f896f175e722441ddc3f6230e6833119c9dcc729256eb745b6b"/>
-        <VersionInfo resourceName="GenerateAuthorizationCode" version="SHA-512:ab9bc09e8a3880fe3abc5c4514411557ed27f41021017f3b6960e71c0409a304c9cd74acb07b8fc89d50789c42eef2ef5431ed4d5ced81694041906fc5811d7a"/>
+        <VersionInfo resourceName="GenerateAuthorizationCode" version="SHA-512:65592b3624764c645beb34284eeec1d6bae3ed8381a13b94c70f3e9f3a8c34297e263c8183d79a5ca65da58824876b1c4abe8f7bad155d50cae1f3bcdde16753"/>
         <VersionInfo resourceName="LoginPage" version="SHA-512:f1f00cde8af1dd608a98046bebf8a8cf110632a6679aba98a9896ce7f35fc155357c47ad5b7c209910f7c539b9415ff29aa0ba73de8fc13da1782ae816b923d3"/>
         <VersionInfo resourceName="Send404NotFoundResponse" version="SHA-512:8ab1ec115aaeb382604cf8bf0996de5ac6a5f3c6ab0014ce0e9efb11b4d6a3e5e788876992e65967b02f6ddc469075f4e288b18023cd864f4259c111a730af10"/>
         <VersionInfo resourceName="SetAuthCodeParameters" version="SHA-512:a42270a36624dad16d6bcb9f046c9b5d853a809cd05321b266b24cdb7cd63deb9518867988bba258b0fa2a20f948ab9ca22d89a460b34814288afd3c31aeaa59"/>

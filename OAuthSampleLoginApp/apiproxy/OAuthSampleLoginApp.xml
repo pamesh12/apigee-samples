@@ -2,13 +2,13 @@
 <APIProxy revision="4" name="OAuthSampleLoginApp">
     <Basepaths>/samplelogin</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1575607206539</CreatedAt>
+    <CreatedAt>1575430216995</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description></Description>
     <DisplayName>OAuthSampleLoginApp</DisplayName>
-    <LastModifiedAt>1575607206539</LastModifiedAt>
+    <LastModifiedAt>1576647797759</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:08a84202fb45fdc22dd274e97f24f43ca7cc3570d78dd09d8167c6b05c5e93a48709216072ec688a8abf411fc8dcacc430c519cba1b526d9b24fc97d33334cf2</ManifestVersion>
+    <ManifestVersion>SHA-512:b01b64b2bacb4e2d20b9f2d73fd878de0bad07dec2b87ab6b555a24e15a14982a8cf2909af54c787e3e64407b41927a159ec2b15b21762b1a1593520d0c68e1a</ManifestVersion>
     <Policies>
         <Policy>AuthCodeRequestMessage</Policy>
         <Policy>GetCredentials</Policy>
