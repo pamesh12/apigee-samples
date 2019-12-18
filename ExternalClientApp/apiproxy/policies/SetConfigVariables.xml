@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="SetConfigVariables" mapIdentifier="ExternalOAuth">
+    <DisplayName>SetConfigVariables</DisplayName>
+    <Properties/>
+    <ExclusiveCache>false</ExclusiveCache>
+    <ExpiryTimeInSecs>300</ExpiryTimeInSecs>
+    <Get assignTo="internal.redirect_uri" index="1">
+        <Key>
+            <Parameter>internal_redirect_uri</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="internal.client_id" index="1">
+        <Key>
+            <Parameter>internal_client_id</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="ext.scope" index="1">
+        <Key>
+            <Parameter>scope</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="ext.response_type" index="1">
+        <Key>
+            <Parameter>response_type</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

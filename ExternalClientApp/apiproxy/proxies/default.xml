@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="CallbackFlow">
+            <Description>OAuth Callback URL</Description>
+            <Request>
+                <Step>
+                    <Name>AuthCodeResponse</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/callback") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="home">
+            <Description>Default Flow</Description>
+            <Request>
+                <Step>
+                    <Name>generateState</Name>
+                </Step>
+                <Step>
+                    <Name>SetConfigVariables</Name>
+                </Step>
+                <Step>
+                    <Name>CallAuthorize</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <!-- <Condition>(proxy.pathsuffix MatchesPath "/")</Condition>-->
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/externalWeb</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <Condition>(proxy.pathsuffix MatchesPath "/") and (request.verb = "GET")</Condition>
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

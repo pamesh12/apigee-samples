@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="AuthCodeFlow">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>ValidateClientIdRedirect</Name>
+                </Step>
+                <Step>
+                    <Name>JS-SetClientDetails</Name>
+                </Step>
+                <Step>
+                    <Name>CacheClientIdAndRedirect</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/authorize") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="TokenFlow">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="RedirectFlow">
+            <Description>Flow for redirect after auth code</Description>
+            <Request>
+                <Step>
+                    <Name>LC-ClientDetails</Name>
+                </Step>
+                <Step>
+                    <Name>SetOriginalClientDetails</Name>
+                </Step>
+                <Step>
+                    <Name>GetAuthCode</Name>
+                </Step>
+                <Step>
+                    <Name>ExternalAuthorize</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>RedirectAuthCodeToClient</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/redirect") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/externaloauth</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="no-route">
+        <Condition>proxy.pathsuffix = "/redirect"</Condition>
+    </RouteRule>
+    <RouteRule name="default">
+        <TargetEndpoint>AuthTargetEndpoint</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

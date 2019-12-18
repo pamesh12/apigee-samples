@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="ExternalAuthRequest">
+    <DisplayName>ExternalAuthRequest</DisplayName>
+    <Properties/>
+    <Copy source="request">
+        <Headers/>
+        <QueryParams>
+            <QueryParam name="response_type"/>
+            <QueryParam name="state"/>
+            <QueryParam name="scope"/>
+        </QueryParams>
+    </Copy>
+    <Set>
+        <QueryParams>
+            <QueryParam name="client_id">{ext.client_id}</QueryParam>
+            <QueryParam name="redirect_uri">{ext.redirect_uri}</QueryParam>
+        </QueryParams>
+        <Verb>GET</Verb>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="11" name="ExternalOAuthAPI">
+    <Basepaths>/externaloauth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576653951787</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>API for external OAuth</Description>
+    <DisplayName>ExternalOAuthAPI</DisplayName>
+    <LastModifiedAt>1576674343551</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:74bd7aea4b6f3a4dc41953a7738d0afa3a290d134481bfc5440502673837811cba5daf581a289fb5fe06bda9bd6ac24aebb9f579578ced50d390877a79a6e2b1</ManifestVersion>
+    <Policies>
+        <Policy>CacheClientIdAndRedirect</Policy>
+        <Policy>ExternalAuthRequest</Policy>
+        <Policy>ExternalAuthorize</Policy>
+        <Policy>GetAuthCode</Policy>
+        <Policy>JS-SetClientDetails</Policy>
+        <Policy>LC-ClientDetails</Policy>
+        <Policy>RedirectAuthCodeToClient</Policy>
+        <Policy>SetConfig</Policy>
+        <Policy>SetOriginalClientDetails</Policy>
+        <Policy>ValidateClientIdRedirect</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-SetClientDetails.js</Resource>
+        <Resource>jsc://RedirectAuthCodeToClient.js</Resource>
+        <Resource>jsc://SetOriginalClientDetails.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>AuthTargetEndpoint</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

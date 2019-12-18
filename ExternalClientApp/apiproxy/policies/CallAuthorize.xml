@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="CallAuthorize">
+    <DisplayName>CallAuthorize</DisplayName>
+    <Properties/>
+    <Set>
+        <QueryParams>
+            <QueryParam name="client_id">{internal.client_id}</QueryParam>
+            <QueryParam name="scope">{ext.scope}</QueryParam>
+            <QueryParam name="state">{generated.state}</QueryParam>
+            <QueryParam name="redirect_uri">{internal.redirect_uri}</QueryParam>
+            <QueryParam name="response_type">{ext.response_type}</QueryParam>
+        </QueryParams>
+        <FormParams/>
+        <Verb>GET</Verb>
+        <Path>/authorize</Path>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request"/>
+</AssignMessage>

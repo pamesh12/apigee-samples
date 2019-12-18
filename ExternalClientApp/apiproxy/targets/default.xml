@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <!-- <Step>
+                <Name>SetTargetURL</Name>
+            </Step>-->
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows/>
+    <HTTPTargetConnection>
+        <Properties>
+            <Property name="target.copy.pathsuffix">false</Property>
+        </Properties>
+        <URL>http://pamesh12-eval-test.apigee.net/externaloauth/{message.path}</URL>
+    </HTTPTargetConnection>
+</TargetEndpoint>

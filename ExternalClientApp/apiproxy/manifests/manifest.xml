@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AuthCodeResponse" version="SHA-512:5b65dbf1a13edffe08b5a6d15dc31572b5b1400f96049b0b0a5a3046e08372d985e361e7eecb272445d0be24554db9684fa816b8a460a1391f92a716dd28ea5a"/>
+        <VersionInfo resourceName="CallAuthorize" version="SHA-512:5a2ec44d8d620cbe1aeb2fe36cf79f026d6f076eeeaabe5c61590664b875f959d61c1e896ef0c466d398edd43820e9e011e4a7da8fa2125dd077120f93686192"/>
+        <VersionInfo resourceName="SetConfigVariables" version="SHA-512:13738eac6dd184bc78c93779bb2ccda94d5bdeac2faa5590988fa942eb83b3c2117a02ace02cb8c4ec9923dbd657d590955df8608271d45c4de124d9ebd93997"/>
+        <VersionInfo resourceName="generateState" version="SHA-512:596055495d6f6e1348801508f345a9bb2ec7f9665dd378e4962d2a4748a862125d0b16a00c2bddd081f041a9bf5bc897854b27afb94fc73bb01f83dc1fddbf35"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4daa524ee9cd3522d139d8a6e28c9e1b3166b298d959b00671c074e7a807bbe81770500f89f5b8842bbdd24b9496ce2a05578fc75faa7ae1b9724547c2a70290"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://SetTargetURL.js" version="SHA-512:3dcc9053ff359094fc9c8c9d1c103af2f586cea78d562588828aa2be9ccc60588ce8b29ba655fbb55ded99bfcd6edcb429e652f0dbd164fec348d098fc9eb6dc"/>
+        <VersionInfo resourceName="jsc://generateState.js" version="SHA-512:17d0f838eacc706939cda3b6675d2393902f6484b79056840cc1bd16be722780e8ec310686311a93e5406241a6ec17cca08eead877426d1500e9d3c75bd7ae60"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:ca754dd52af9682af9371917857b575fa1ce0746f8308d1eef2635841fb61b38c17c8a235bc2c307c1dfe3e1e17482186d7f5c684f7211bd484bc3bd9423377c"/>
+    </TargetEndpoints>
+</Manifest>

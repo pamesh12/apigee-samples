@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="SetConfig" mapIdentifier="ExternalOAuth">
+    <DisplayName>SetConfig</DisplayName>
+    <Properties/>
+    <ExclusiveCache>false</ExclusiveCache>
+    <ExpiryTimeInSecs>300</ExpiryTimeInSecs>
+    <Get assignTo="ext.client_id" index="1">
+        <Key>
+            <Parameter>client_id</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="ext.redirect_uri" index="1">
+        <Key>
+            <Parameter>redirect_uri</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>
