@@ -29,8 +29,31 @@
         </Flow>
         <Flow name="TokenFlow">
             <Description/>
-            <Request/>
-            <Response/>
+            <Request>
+                <Step>
+                    <Name>SetAuthCodeVariable</Name>
+                </Step>
+                <Step>
+                    <Name>ValidateAccessCode</Name>
+                </Step>
+                <Step>
+                    <Name>SetConfig</Name>
+                </Step>
+                <Step>
+                    <Name>SetAuthHeader</Name>
+                </Step>
+                <Step>
+                    <Name>BuildExtAccessTokenRequest</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>AccessTokenResponse</Name>
+                </Step>
+                <Step>
+                    <Name>SendSuccessTokenResponse</Name>
+                </Step>
+            </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
         </Flow>
         <Flow name="RedirectFlow">

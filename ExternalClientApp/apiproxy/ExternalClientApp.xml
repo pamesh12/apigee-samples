@@ -2,16 +2,18 @@
 <APIProxy revision="4" name="ExternalClientApp">
     <Basepaths>/externalWeb</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1576669782061</CreatedAt>
+    <CreatedAt>1576651256120</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>Client App for External OAuth</Description>
     <DisplayName>ExternalClientApp</DisplayName>
-    <LastModifiedAt>1576669782061</LastModifiedAt>
+    <LastModifiedAt>1576738507068</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:679c93bd9ed9ae43ac1cdb1ac154a67db64c7c1a23b541e5b36456ad41099aaaf2d64b4dde301f72ff29666d59b2b99d4ef0e30f6dba72223c83715e5dc7529d</ManifestVersion>
+    <ManifestVersion>SHA-512:622afd383e2ed15a750ddc080a293b4f14778405f5849a53cb33ae740fc347e080cbacc07e90ef530ff29f47fafa9a7daf01d8960ad3acdb6a63595c8c243ca1</ManifestVersion>
     <Policies>
         <Policy>AuthCodeResponse</Policy>
+        <Policy>BuildAccessTokenRequest</Policy>
         <Policy>CallAuthorize</Policy>
+        <Policy>EncodeAppCredentials</Policy>
         <Policy>SetConfigVariables</Policy>
         <Policy>generateState</Policy>
     </Policies>

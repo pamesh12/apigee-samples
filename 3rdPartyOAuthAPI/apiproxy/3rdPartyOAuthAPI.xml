@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="11" name="ExternalOAuthAPI">
+<APIProxy revision="1" name="3rdPartyOAuthAPI">
     <Basepaths>/externaloauth</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1576653951787</CreatedAt>
+    <CreatedAt>1576728436145</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>API for external OAuth</Description>
     <DisplayName>ExternalOAuthAPI</DisplayName>
-    <LastModifiedAt>1576674343551</LastModifiedAt>
+    <LastModifiedAt>1576740254479</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:74bd7aea4b6f3a4dc41953a7738d0afa3a290d134481bfc5440502673837811cba5daf581a289fb5fe06bda9bd6ac24aebb9f579578ced50d390877a79a6e2b1</ManifestVersion>
+    <ManifestVersion>SHA-512:d01f067d9deb1c7963c809ad714f0307420e1cbc4e209dc65548ecc70899c9f64c695653aa61838838b7f07aeba61b4dfd7c3652615fbd0adf362fad9f15443c</ManifestVersion>
     <Policies>
+        <Policy>AccessTokenResponse</Policy>
+        <Policy>BuildExtAccessTokenRequest</Policy>
         <Policy>CacheClientIdAndRedirect</Policy>
         <Policy>ExternalAuthRequest</Policy>
         <Policy>ExternalAuthorize</Policy>
@@ -17,14 +19,19 @@
         <Policy>JS-SetClientDetails</Policy>
         <Policy>LC-ClientDetails</Policy>
         <Policy>RedirectAuthCodeToClient</Policy>
+        <Policy>SendSuccessTokenResponse</Policy>
+        <Policy>SetAuthCodeVariable</Policy>
+        <Policy>SetAuthHeader</Policy>
         <Policy>SetConfig</Policy>
         <Policy>SetOriginalClientDetails</Policy>
+        <Policy>ValidateAccessCode</Policy>
         <Policy>ValidateClientIdRedirect</Policy>
     </Policies>
     <ProxyEndpoints>
         <ProxyEndpoint>default</ProxyEndpoint>
     </ProxyEndpoints>
     <Resources>
+        <Resource>jsc://AccessTokenResponse.js</Resource>
         <Resource>jsc://JS-SetClientDetails.js</Resource>
         <Resource>jsc://RedirectAuthCodeToClient.js</Resource>
         <Resource>jsc://SetOriginalClientDetails.js</Resource>

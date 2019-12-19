@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OAuthV2 async="false" continueOnError="false" enabled="true" name="ExternalAuthorize">
     <DisplayName>ExternalAuthorize</DisplayName>
-    <Properties/>
-    <Attributes/>
     <RedirectUri>request.queryparam.redirect_uri</RedirectUri>
     <ExternalAuthorizationCode>request.queryparam.code</ExternalAuthorizationCode>
     <GenerateResponse enabled="false"/>
@@ -12,5 +10,4 @@
     <ResponseType>request.queryparam.response_type</ResponseType>
     <State>request.queryparam.state</State>
     <StoreToken>true</StoreToken>
-    <Tokens/>
 </OAuthV2>

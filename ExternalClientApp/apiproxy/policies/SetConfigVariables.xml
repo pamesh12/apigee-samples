@@ -14,6 +14,11 @@
             <Parameter>internal_client_id</Parameter>
         </Key>
     </Get>
+    <Get assignTo="internal.client_secret" index="1">
+        <Key>
+            <Parameter>internal_client_secret</Parameter>
+        </Key>
+    </Get>
     <Get assignTo="ext.scope" index="1">
         <Key>
             <Parameter>scope</Parameter>

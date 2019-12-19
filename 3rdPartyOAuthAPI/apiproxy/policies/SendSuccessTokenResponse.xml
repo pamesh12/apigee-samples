@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AssignMessage async="false" continueOnError="false" enabled="true" name="AuthCodeResponse">
-    <DisplayName>AuthCodeResponse</DisplayName>
-    <Properties/>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SendSuccessTokenResponse">
+    <DisplayName>SendSuccessTokenResponse</DisplayName>
     <Set>
         <Payload contentType="text/html"><![CDATA[
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Auth Code Response</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style>
+         pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+         }
+         table {border-collapse:collapse; table-layout:fixed; width:100%;}
+        table td {width:70%; word-wrap:break-word;}
+      </style>
+  <script type="text/javascript">
+    
+  </script>
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000">
@@ -18,29 +33,23 @@
             <td valign="top" height="700">
                 <form name="form1" method="POST" action="{proxy.basepath}/token">
                     <table width="80%" border="0" align="center">
-                        <input type="hidden" name="code" value="{request.queryparam.code}"/>
+                      <input type="hidden" name="code" value="{request.queryparam.code}"</input>
                         <tr bgcolor="#CCCCCC">
                             <td colspan="2">
                                 <div align="center">
-                                    <b>Auth Code Response</b>
+                                    <b>Token Response</b>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><b>
-                                    <font color="#660000">Auth Code</font>
-                                </b></td>
-                            <td><label>{request.queryparam.code}</label></td>
+                          <td>
+                            <pre id="tokenResponse">
+                                {response.content}
+                              </pre>
+                            </td>
                         </tr>
                         <tr>
-                            <td><b>
-                                    <font color="#660000">State</font>
-                                </b></td>
-                            <td><label>{request.queryparam.state}</label></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit" name="Submit" value="Get Access Token">
+                            <td><input type="submit" name="Submit" value="Call API">
                             </td>
                         </tr>
                     </table>

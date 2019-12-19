@@ -21,6 +21,22 @@
             <Response/>
             <Condition>(proxy.pathsuffix MatchesPath "/callback") and (request.verb = "GET")</Condition>
         </Flow>
+        <Flow name="TokenFlow">
+            <Description>Flow for getting token from Auth code</Description>
+            <Request>
+                <Step>
+                    <Name>SetConfigVariables</Name>
+                </Step>
+                <Step>
+                    <Name>EncodeAppCredentials</Name>
+                </Step>
+                <Step>
+                    <Name>BuildAccessTokenRequest</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
+        </Flow>
         <Flow name="home">
             <Description>Default Flow</Description>
             <Request>
@@ -35,7 +51,6 @@
                 </Step>
             </Request>
             <Response/>
-            <!-- <Condition>(proxy.pathsuffix MatchesPath "/")</Condition>-->
         </Flow>
     </Flows>
     <HTTPProxyConnection>
@@ -43,8 +58,10 @@
         <Properties/>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
+    <RouteRule name="no-route">
+        <Condition>proxy.pathsuffix = "/callback"</Condition>
+    </RouteRule>
     <RouteRule name="default">
-        <Condition>(proxy.pathsuffix MatchesPath "/") and (request.verb = "GET")</Condition>
         <TargetEndpoint>default</TargetEndpoint>
     </RouteRule>
 </ProxyEndpoint>

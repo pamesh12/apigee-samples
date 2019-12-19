@@ -9,6 +9,11 @@
             <Parameter>client_id</Parameter>
         </Key>
     </Get>
+    <Get assignTo="ext.client_secret" index="1">
+        <Key>
+            <Parameter>ext_client_secret</Parameter>
+        </Key>
+    </Get>
     <Get assignTo="ext.redirect_uri" index="1">
         <Key>
             <Parameter>redirect_uri</Parameter>
