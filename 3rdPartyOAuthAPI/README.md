@@ -1,6 +1,7 @@
 # Apigee Edge and Okta Integration
 
 This API demonstrate use of 3rd party OAuth token providers.Using this we can import externally generated access tokens, refresh tokens, or auth codes into the Edge token store. 
+
 Apigee Doc : https://docs.apigee.com/api-platform/security/oauth/use-third-party-oauth-system
 
 We have used Okta as our OAuth provider in given example. Please create an account on Okta developer portal to work with this API.
@@ -33,5 +34,11 @@ Client --> Apigee OAuth API (/authorize) --> Okta Auth Server
 1. Apigee have the auth code from Okta. It validates the request with those details.
 1. If validation is successful, apigee calls Okta /token endpoint to get access token for given auth code.
 1. Okta returns response back to Apigee.
+1. Apigee saves the token from Okta using OAuth Policy.
+1. Sends the response back to client.
 
-Work in Progress.. 
+## API Flow
+1. Client calls the API with Bearer Token.
+1. Apigee validates the token using OAuth Policy (VerifyAccessToken)
+1. Apigee then validates the JWT token using JWT Verify policy.
+1. If validation is successful, api response is returned.
