@@ -2,7 +2,9 @@
 Samples for Apigee API Management
 
 Currently Available APIs:
-1. [3rdPartyOAuthAPI](./3rdPartyOAuthAPI) - OAuth API to demostrate use of 3rd party OAuth servers for Auth Code and token generation.
+1. [3rdPartyOAuthAPI](./3rdPartyOAuthAPI) - OAuth API to demostrate use of 3rd party OAuth servers for Auth Code and token generation. Complete flow can be tested with inclusion of below 2 apis.
+    * [APISecuredBy3rdPartyOAuth](./APISecuredBy3rdPartyOAuth)- Demo API secured by OAuth.
+    * [ExternalClientApp](./ExternalClientApp) - Demo Client App.
 1. [3-Legged OAuth API](./3-Legged-OAuth) - Authorization Code Flow.
 1. [2-Legged OAuth API](./2-Legged-OAuth) - Client Credential Flow
 1. [Caching in Apigee](./CacheDemoApi) -  Caching external service response 
