@@ -15,5 +15,5 @@
         <Verb>POST</Verb>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo type="request" transport="http" createNew="true"/>
+    <AssignTo type="request" transport="http" createNew="true">tokenRequest</AssignTo>
 </AssignMessage>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="1" name="3rdPartyOAuthAPI">
+<APIProxy revision="4" name="3rdPartyOAuthAPI">
     <Basepaths>/externaloauth</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1576728436145</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>API for external OAuth</Description>
     <DisplayName>ExternalOAuthAPI</DisplayName>
-    <LastModifiedAt>1576740254479</LastModifiedAt>
+    <LastModifiedAt>1577544641457</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:d01f067d9deb1c7963c809ad714f0307420e1cbc4e209dc65548ecc70899c9f64c695653aa61838838b7f07aeba61b4dfd7c3652615fbd0adf362fad9f15443c</ManifestVersion>
+    <ManifestVersion>SHA-512:819b1295ce6e3998e3d0b6e627c12f15ab6188ba011ef676e686987350b60ff7778ebcbd091ab63cc222031ce266e1061bbc3a0242de41690fd948a8702af523</ManifestVersion>
     <Policies>
         <Policy>AccessTokenResponse</Policy>
         <Policy>BuildExtAccessTokenRequest</Policy>
         <Policy>CacheClientIdAndRedirect</Policy>
+        <Policy>CallExternalTokenAPI</Policy>
         <Policy>ExternalAuthRequest</Policy>
         <Policy>ExternalAuthorize</Policy>
+        <Policy>ExtractAccessToken</Policy>
         <Policy>GetAuthCode</Policy>
         <Policy>JS-SetClientDetails</Policy>
         <Policy>LC-ClientDetails</Policy>
@@ -22,8 +24,11 @@
         <Policy>SendSuccessTokenResponse</Policy>
         <Policy>SetAuthCodeVariable</Policy>
         <Policy>SetAuthHeader</Policy>
+        <Policy>SetClientDetailsForSaveAccessToken</Policy>
         <Policy>SetConfig</Policy>
+        <Policy>SetExternalAuthHeader</Policy>
         <Policy>SetOriginalClientDetails</Policy>
+        <Policy>StoreToken</Policy>
         <Policy>ValidateAccessCode</Policy>
         <Policy>ValidateClientIdRedirect</Policy>
     </Policies>

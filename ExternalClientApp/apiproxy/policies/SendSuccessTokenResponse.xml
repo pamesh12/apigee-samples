@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SendSuccessTokenResponse">
+    <DisplayName>SendSuccessTokenResponse</DisplayName>
+    <Set>
+        <Payload contentType="text/html"><![CDATA[
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auth Code Response</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style>
+         pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+         }
+         table {border-collapse:collapse; table-layout:fixed; width:100%;}
+        table td {width:70%; word-wrap:break-word;}
+      </style>
+  <script type="text/javascript">
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("apiResponse").innerHTML="";
+             document.getElementById("apiResponse").innerHTML = this.responseText;
+            }
+          };
+          var tokenResponse = document.getElementById("tokenResponse").innerHTML;
+          if(tokenResponse){
+        	var tokenResponseJson = JSON.parse(tokenResponse);	
+        	var accessToken = tokenResponseJson.access_token;
+        	xhttp.open("GET", "/externalWeb/api", true);
+        	xhttp.setRequestHeader("Authorization", "Bearer "+ accessToken);
+        	xhttp.send();
+          }
+        }
+  </script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+    <table width="100%" border="0">
+        <tr>
+            <td valign="top" height="700">
+                <table width="80%" border="0" align="center">
+                    <tr bgcolor="#CCCCCC">
+                        <td colspan="2">
+                            <div align="center">
+                                <b>Token Response</b>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <pre id="tokenResponse">
+                            {response.content}
+                          </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Call API" onclick="loadDoc()"/>
+                        </td>
+                    </tr>
+                </table>
+                <table width="80%" border="0" align="center">
+                    <tr bgcolor="#CCCCCC">
+                        <td colspan="2">
+                            <div align="center">
+                                <b>API Response</b>
+                            </div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <pre id="apiResponse"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+		]]></Payload>
+        <StatusCode>200</StatusCode>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

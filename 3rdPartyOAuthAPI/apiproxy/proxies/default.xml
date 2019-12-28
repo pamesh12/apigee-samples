@@ -40,18 +40,30 @@
                     <Name>SetConfig</Name>
                 </Step>
                 <Step>
-                    <Name>SetAuthHeader</Name>
+                    <Name>SetExternalAuthHeader</Name>
                 </Step>
                 <Step>
                     <Name>BuildExtAccessTokenRequest</Name>
+                </Step>
+                <Step>
+                    <Name>CallExternalTokenAPI</Name>
+                </Step>
+                <Step>
+                    <Name>SetAuthHeader</Name>
+                </Step>
+                <Step>
+                    <Name>SetClientDetailsForSaveAccessToken</Name>
+                </Step>
+                <Step>
+                    <Name>ExtractAccessToken</Name>
+                </Step>
+                <Step>
+                    <Name>StoreToken</Name>
                 </Step>
             </Request>
             <Response>
                 <Step>
                     <Name>AccessTokenResponse</Name>
-                </Step>
-                <Step>
-                    <Name>SendSuccessTokenResponse</Name>
                 </Step>
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
@@ -85,10 +97,9 @@
         <Properties/>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
-    <RouteRule name="no-route">
-        <Condition>proxy.pathsuffix = "/redirect"</Condition>
-    </RouteRule>
-    <RouteRule name="default">
+    <RouteRule name="AuthRoute">
         <TargetEndpoint>AuthTargetEndpoint</TargetEndpoint>
+        <Condition>proxy.pathsuffix = "/authorize"</Condition>
     </RouteRule>
+    <RouteRule name="no-route"/>
 </ProxyEndpoint>

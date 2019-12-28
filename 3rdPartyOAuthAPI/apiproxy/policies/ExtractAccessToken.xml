@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractAccessToken">
+    <DisplayName>ExtractAccessToken</DisplayName>
+    <Properties/>
+    <JSONPayload>
+        <Variable name="token">
+            <JSONPath>$.access_token</JSONPath>
+        </Variable>
+        <Variable name="payload">
+            <JSONPath>$.</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">accessTokenResponse.content</Source>
+    <VariablePrefix>external</VariablePrefix>
+</ExtractVariables>

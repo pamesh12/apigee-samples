@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
+        <VersionInfo resourceName="ApiResponse" version="SHA-512:0e206f80dd28b91ba8ea12f445ac365e547b5c223d1a5f91fddb7904d3e42001cb9e8814bf8730fb7aaef81ad581bb18451d03a5f000e38a414e2cf67b73bd62"/>
         <VersionInfo resourceName="AuthCodeResponse" version="SHA-512:ce2a065641bd02849284cbb1f7e8acb382160d3bd0aee405fce54157061dc78da52d79293325f70cbe422d4e74b9174cd4022218abb9f6e72afd410baa7a7a78"/>
         <VersionInfo resourceName="BuildAccessTokenRequest" version="SHA-512:36a7c0b96257f8ef050fe81b01909acd635a5479ee057898a72556c04688cd513c514cac8bb6018165d8c101e8bd4a9525aef8f7a937041e8aa8e1e1c81d2547"/>
+        <VersionInfo resourceName="CallApi" version="SHA-512:0ca98625419f9ea0abea190185ee39dc0e558a3a67e9015e439259ec21be076fb0438e74a47933a4a3d156e4be25cd0113a6cccfa5265faf6d72eba6c3b46a53"/>
         <VersionInfo resourceName="CallAuthorize" version="SHA-512:5a2ec44d8d620cbe1aeb2fe36cf79f026d6f076eeeaabe5c61590664b875f959d61c1e896ef0c466d398edd43820e9e011e4a7da8fa2125dd077120f93686192"/>
         <VersionInfo resourceName="EncodeAppCredentials" version="SHA-512:c10260921cc38510aab939c3afe4c5972fecb1519a0848eb230019fe1c4b4b9a8d205bed8198ceb6706adeaaed887dfffa64a0b20c5d8b3edeab479c6816f399"/>
+        <VersionInfo resourceName="SendSuccessTokenResponse" version="SHA-512:efcffe80a9ec50509aaa74aff5fb250b7e3f98a1e0bf135f5287c645978ec456cbce3eb42dff3628de935b9d8f3c7944782a1ed17baf8de1cb1e1444af4068ef"/>
+        <VersionInfo resourceName="SetAPIRequest" version="SHA-512:a835d00b4723e68b71fd980ef5c7691c81ae240d9631d547b79e440d6aaa39aec155f85ecf5cf9cb79b9f94c97560d0bd7dec2c519dd51b189efbe511affc641"/>
         <VersionInfo resourceName="SetConfigVariables" version="SHA-512:b6815b292ba710308735303c1eb7f76623206942cca388b70def9d494ca0a7a0d773d7870bf87f067138b180fdc809c013052ccd7aa91c33d44e6460fa3a1c03"/>
         <VersionInfo resourceName="generateState" version="SHA-512:596055495d6f6e1348801508f345a9bb2ec7f9665dd378e4962d2a4748a862125d0b16a00c2bddd081f041a9bf5bc897854b27afb94fc73bb01f83dc1fddbf35"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:eb2304f094a69a53ec6035f0cda7237a6611dc41d28466408d0fbeede18e86a6eb5496b14c4eff8ff3b9ab4e999014e0762b791084964367258b7a15e4caf7b9"/>
+        <VersionInfo resourceName="default" version="SHA-512:186e1c729bcac89e3c4eb2360f9911dbb94eea8ec3e063989bf8f6473f18c9fe189c81e41f8c6dc752c8105c3b1cb3adf7e9ea6512acc5f5a483196a81217438"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://SetTargetURL.js" version="SHA-512:3dcc9053ff359094fc9c8c9d1c103af2f586cea78d562588828aa2be9ccc60588ce8b29ba655fbb55ded99bfcd6edcb429e652f0dbd164fec348d098fc9eb6dc"/>

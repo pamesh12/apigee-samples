@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="StoreToken">
+    <DisplayName>StoreToken</DisplayName>
+    <Properties/>
+    <ExternalAuthorization>true</ExternalAuthorization>
+    <ExternalAccessToken>external.token</ExternalAccessToken>
+    <Operation>GenerateAccessToken</Operation>
+    <GrantType>request.formparam.grant_type</GrantType>
+    <StoreToken>true</StoreToken>
+    <SupportedGrantTypes>
+        <GrantType>client_credentials</GrantType>
+    </SupportedGrantTypes>
+    <GenerateResponse enabled="false"/>
+</OAuthV2>

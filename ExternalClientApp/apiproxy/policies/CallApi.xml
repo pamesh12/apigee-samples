@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="CallApi">
+    <DisplayName>CallApi</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="apiRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>calloutResponse</Response>
+    <LocalTargetConnection>
+        <APIProxy>APISecuredBy3rdPartyOAuth</APIProxy>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </LocalTargetConnection>
+</ServiceCallout>

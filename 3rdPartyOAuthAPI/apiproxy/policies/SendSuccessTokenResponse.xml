@@ -62,7 +62,6 @@
 </html>
 		]]></Payload>
         <StatusCode>200</StatusCode>
-        <ReasonPhrase>Sample Login Page</ReasonPhrase>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <AssignTo createNew="false" transport="http" type="request"/>

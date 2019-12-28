@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="CallExternalTokenAPI">
+    <DisplayName>CallExternalTokenAPI</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="tokenRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>accessTokenResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://dev-664913.okta.com/oauth2/default/v1/token</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

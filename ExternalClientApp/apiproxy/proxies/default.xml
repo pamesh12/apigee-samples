@@ -34,8 +34,29 @@
                     <Name>BuildAccessTokenRequest</Name>
                 </Step>
             </Request>
-            <Response/>
+            <Response>
+                <Step>
+                    <Name>SendSuccessTokenResponse</Name>
+                </Step>
+            </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="APICall">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>SetAPIRequest</Name>
+                </Step>
+                <Step>
+                    <Name>CallApi</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>ApiResponse</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/api") and (request.verb = "GET")</Condition>
         </Flow>
         <Flow name="home">
             <Description>Default Flow</Description>

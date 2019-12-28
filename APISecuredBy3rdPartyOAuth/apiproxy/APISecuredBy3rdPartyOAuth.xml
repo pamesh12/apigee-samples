@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="APISecuredBy3rdPartyOAuth">
+    <Basepaths>/api</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1576756108278</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>API Secured by 3rd Party OAuth</Description>
+    <DisplayName>APISecuredBy3rdPartyOAuth</DisplayName>
+    <LastModifiedAt>1577543994408</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:378ca97d0ec1ec13c8b1f8e1a623e8b00f0c0417bf29c0907194ecdc79b4a9f46a4b9b0bf809c0e7433b023293cb38f750f649d3f9b8f56e6c9d45fac0c729b3</ManifestVersion>
+    <Policies>
+        <Policy>Response</Policy>
+        <Policy>SetConfig</Policy>
+        <Policy>VerifyAccessToken</Policy>
+        <Policy>VerifyAccessTokenJWT</Policy>
+        <Policy>remove-header-authorization</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

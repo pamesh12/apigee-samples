@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyJWT async="false" continueOnError="false" enabled="true" name="VerifyAccessTokenJWT">
+    <DisplayName>VerifyAccessTokenJWT</DisplayName>
+    <Algorithm>RS256</Algorithm>
+    <PublicKey>
+        <Value ref="public.key"/>
+    </PublicKey>
+    <Subject ref="ext.subject"/>
+    <Issuer ref="ext.issuer"/>
+    <Audience>api://default</Audience>
+    <AdditionalClaims>
+        <Claim name="cid" type="string" ref="ext.client_id"/>
+    </AdditionalClaims>
+</VerifyJWT>

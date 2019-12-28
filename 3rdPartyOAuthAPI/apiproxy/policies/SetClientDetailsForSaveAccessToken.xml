@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="SetClientDetailsForSaveAccessToken">
+    <DisplayName>SetClientDetailsForSaveAccessToken</DisplayName>
+    <Properties/>
+    <Remove>
+        <Payload>true</Payload>
+        <Headers>
+            <Header name="Authorization"/>
+        </Headers>
+    </Remove>
+    <Set>
+        <Headers>
+            <Header name="Authorization">{internalAppCredentials}</Header>
+            <Header name="Accept">application/json</Header>
+        </Headers>
+        <FormParams>
+            <FormParam name="client_id">{int.client_id}</FormParam>
+            <FormParam name="grant_type">client_credentials</FormParam>
+        </FormParams>
+    </Set>
+    <AssignVariable>
+        <Name>oauth_external_authorization_status</Name>
+        <Value>true</Value>
+    </AssignVariable>
+    <Verb>POST</Verb>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request"/>
+</AssignMessage>

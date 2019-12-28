@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="4" name="ExternalClientApp">
+<APIProxy revision="5" name="ExternalClientApp">
     <Basepaths>/externalWeb</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1576651256120</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>Client App for External OAuth</Description>
     <DisplayName>ExternalClientApp</DisplayName>
-    <LastModifiedAt>1576738507068</LastModifiedAt>
+    <LastModifiedAt>1577547486336</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:622afd383e2ed15a750ddc080a293b4f14778405f5849a53cb33ae740fc347e080cbacc07e90ef530ff29f47fafa9a7daf01d8960ad3acdb6a63595c8c243ca1</ManifestVersion>
+    <ManifestVersion>SHA-512:64569cb4835bb918340d52e54fff60601bedb8a07d72ebed13a90f0775552daede2d5617f94ce9732d66e3eee34bf330ebd76c920e8ed8a292b28bc5b03f5f6b</ManifestVersion>
     <Policies>
+        <Policy>ApiResponse</Policy>
         <Policy>AuthCodeResponse</Policy>
         <Policy>BuildAccessTokenRequest</Policy>
+        <Policy>CallApi</Policy>
         <Policy>CallAuthorize</Policy>
         <Policy>EncodeAppCredentials</Policy>
+        <Policy>SendSuccessTokenResponse</Policy>
+        <Policy>SetAPIRequest</Policy>
         <Policy>SetConfigVariables</Policy>
         <Policy>generateState</Policy>
     </Policies>
