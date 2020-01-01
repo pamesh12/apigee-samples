@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="4" name="3rdPartyOAuthAPI">
+<APIProxy revision="5" name="3rdPartyOAuthAPI">
     <Basepaths>/externaloauth</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1576728436145</CreatedAt>
     <CreatedBy>pamesh12@gmail.com</CreatedBy>
     <Description>API for external OAuth</Description>
     <DisplayName>ExternalOAuthAPI</DisplayName>
-    <LastModifiedAt>1577544641457</LastModifiedAt>
+    <LastModifiedAt>1577882854267</LastModifiedAt>
     <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:819b1295ce6e3998e3d0b6e627c12f15ab6188ba011ef676e686987350b60ff7778ebcbd091ab63cc222031ce266e1061bbc3a0242de41690fd948a8702af523</ManifestVersion>
+    <ManifestVersion>SHA-512:031dab6a68967d9d6ed6eed47217f66e7cb57e01e23e76a88dc65512d4ffd5de6f5897b2b6e3ff5bf282ccd30df004f7afbf71197af6640400aa78a596ca1f90</ManifestVersion>
     <Policies>
         <Policy>AccessTokenResponse</Policy>
         <Policy>BuildExtAccessTokenRequest</Policy>
@@ -19,9 +19,10 @@
         <Policy>ExtractAccessToken</Policy>
         <Policy>GetAuthCode</Policy>
         <Policy>JS-SetClientDetails</Policy>
+        <Policy>KVM-ExternalLog</Policy>
         <Policy>LC-ClientDetails</Policy>
+        <Policy>MessageLogging</Policy>
         <Policy>RedirectAuthCodeToClient</Policy>
-        <Policy>SendSuccessTokenResponse</Policy>
         <Policy>SetAuthCodeVariable</Policy>
         <Policy>SetAuthHeader</Policy>
         <Policy>SetClientDetailsForSaveAccessToken</Policy>

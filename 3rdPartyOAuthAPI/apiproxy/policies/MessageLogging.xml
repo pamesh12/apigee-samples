@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="MessageLogging">
+    <DisplayName>MessageLogging</DisplayName>
+    <Syslog>
+        <Message>
+            [{customerToken}
+            tag="{organization.name}.{apiproxy.name}.{environment.name}"] 
+            uri= {message.uri} , verb ={message.verb}, headers={message.headers.names},
+            statusCode={message.status.code}, message={message}</Message>
+        <Host>logs-01.loggly.com</Host>
+        <Port>514</Port>
+    </Syslog>
+</MessageLogging>

@@ -10,9 +10,10 @@
         <VersionInfo resourceName="ExtractAccessToken" version="SHA-512:789c4a41e519eb280e56e041d3b72a08b65ebd9459cd15b18d777544a54a78848a39f75102b6749cc40a4551f9abc7d2262fbc48bf922e38d3f73dc44e6c1f76"/>
         <VersionInfo resourceName="GetAuthCode" version="SHA-512:d27e85ae9cea74b213a7cabdc4befd5a4933603c425d6d8e9614c5bda8692657d8496e45ffe1cc9a009315676a17bde88ba56f654ddde819d625b89d232f2211"/>
         <VersionInfo resourceName="JS-SetClientDetails" version="SHA-512:41dc653e51f79e57d5c655f2a995f951ee5ccec4afdca906569fb0bad4f4ce28a282f01c4be86645acd00349aba6f26eb14d9a7708e58470cc69cff2ca961f69"/>
+        <VersionInfo resourceName="KVM-ExternalLog" version="SHA-512:92251625b51a4fd7ba6fbd31c9d8103df64ed714aa7cd7e958141604ce8b1cca4ab772db9e7b15a6c81e07eb96775cfb1bbec673e36479e1563fb75a8b36fbec"/>
         <VersionInfo resourceName="LC-ClientDetails" version="SHA-512:5f69644b1c6e5317ad8a491d837f7cf7a30ef41ff435057ed82f027c28c49da7139b7cf8d78206896626ae1fe03ac5008b45c68bc1fc66c921fe5098c6553bf0"/>
+        <VersionInfo resourceName="MessageLogging" version="SHA-512:755cd260a192d7dbb52c96b5c899c3cfdaa02fe13fbdb1131764b72c5a5ec1808eeb207dc1521391120975e544a00c95350fd76c1b1b8e1e310fd024ce06c173"/>
         <VersionInfo resourceName="RedirectAuthCodeToClient" version="SHA-512:d8340cb1359fc376d72ce70fb26e4e1f40911c40d7cd31b6acab0aedee991e18cf0be81e2ee4aa31fca3e3476dfa2b2fca0b3f73ec3cb5f784034f5de4af2033"/>
-        <VersionInfo resourceName="SendSuccessTokenResponse" version="SHA-512:1a67e9e43ecf037fed7d01becf448098c4fe73be8fd5cad2e20e56cd4c918fe001b2393d196fbd7a1323bef59246d2a53965e27976bb91a464005ef02579e2a7"/>
         <VersionInfo resourceName="SetAuthCodeVariable" version="SHA-512:dbe085854df6e6b5edc977ac31542cc203cea7ff0adc7fd118979633092d9cfd691b52c1e74b0d1d0651482216913fc23195bb661570a499ec1502be53e332e7"/>
         <VersionInfo resourceName="SetAuthHeader" version="SHA-512:b1792ca433ecca974458c77e017dc6bdc74ac3ad7e7379b9c4dced88293ca79ad0aabbf1ffce9feca0befcf8b06dea0ef52f5e91bfe85b068691f8ccfead7079"/>
         <VersionInfo resourceName="SetClientDetailsForSaveAccessToken" version="SHA-512:f6c65af9d43126eb8964c6fc2ea059618b43bdee323eb6f1319ad8ccac6e8499a35ceff329d5d44ec4da633656413bec5504f70dd988b9fbe31e467425857249"/>
@@ -24,7 +25,7 @@
         <VersionInfo resourceName="ValidateClientIdRedirect" version="SHA-512:d8361bb7edb97b0e0f481f069e886154529ccb9b8f4873de3d47acefb11a8bc84073ee72da1ab58a139a7ff8cc8bd127d48ae3913c51b9a565213b29e135a475"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:e93864e593e35f3c62af9a4581ed658657e43bb77f9cb6b168dce24d0a62c3d6bbc91ae8f11edb3f88e0591283495dfccf378e1e962a84696897c21dab1e03f7"/>
+        <VersionInfo resourceName="default" version="SHA-512:65b8a6bf37d624f520bcbc9b6ba3fde037777b009e4a75c417ece665b9fceffa6991b3c4e0112b6af32bad8b343e41ff31b82765e461855b6a9731513608f325"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://AccessTokenResponse.js" version="SHA-512:e91a1832f01c8aac7d25673e7df1fbfe6d5cf7cd7c825e8b8c0c4db7aeaba1fa06b4fd557795f0a3541310aeafd0334c6e6ee7cca2d6b80ea06263585b207df5"/>
