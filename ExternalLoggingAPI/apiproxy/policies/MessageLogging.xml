@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="MessageLogging">
+    <DisplayName>MessageLogging</DisplayName>
+    <Syslog>
+        <Message variablePrefix="%" variableSuffix="#" contentType="application/json">
+            [%customerToken#
+            tag="%organization.name#.%apiproxy.name#.%environment.name#"] 
+            { "uri" : %proxy.url# , 
+              "verb" : %request.verb#,
+              "statusCode": %message.status.code#
+             }
+        </Message>
+        <Host>logs-01.loggly.com</Host>
+        <Port>514</Port>
+        <FormatMessage>true</FormatMessage>
+    </Syslog>
+</MessageLogging>

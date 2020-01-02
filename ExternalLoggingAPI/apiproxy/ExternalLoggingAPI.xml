@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="ExternalLoggingAPI">
+    <Basepaths>/externallog</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1577967386899</CreatedAt>
+    <CreatedBy>pamesh12@gmail.com</CreatedBy>
+    <Description>API to demonstrate external message logging</Description>
+    <DisplayName>ExternalLoggingAPI</DisplayName>
+    <LastModifiedAt>1577970612914</LastModifiedAt>
+    <LastModifiedBy>pamesh12@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:c6d419c139ee7765c9a2823c97f664cd2a9db6303061ffb2913e233ee5dd02c16118e401ba0911bc927b4877f99ddb493065729edab72b290fcb95b603150d1a</ManifestVersion>
+    <Policies>
+        <Policy>KVM-ExternalLog</Policy>
+        <Policy>MessageLogging</Policy>
+        <Policy>Response</Policy>
+        <Policy>impose-quota</Policy>
+        <Policy>remove-query-param-apikey</Policy>
+        <Policy>verify-api-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

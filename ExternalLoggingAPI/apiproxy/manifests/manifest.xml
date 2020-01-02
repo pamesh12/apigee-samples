@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="KVM-ExternalLog" version="SHA-512:92251625b51a4fd7ba6fbd31c9d8103df64ed714aa7cd7e958141604ce8b1cca4ab772db9e7b15a6c81e07eb96775cfb1bbec673e36479e1563fb75a8b36fbec"/>
+        <VersionInfo resourceName="MessageLogging" version="SHA-512:176218fc60568eda0c070fe9824e16fa88555db5af1b207e46b3f64deaf1727c5d19b1a2744286b32d003d0c41e95021ad1149159e002627dbd3af26a9536daf"/>
+        <VersionInfo resourceName="Response" version="SHA-512:5e4b8062b51466ef7793d1720ea3dde835fec7592e8caf41e7f5d241b8c163051705ccd0d8c0d857aecbd0fddcbc1a79d4a734b7204ad8fab5931ec8da490947"/>
+        <VersionInfo resourceName="impose-quota" version="SHA-512:c9fa343c043ee2a736b86ede60733f5c27b63e67d9e337d35098a3379ae00b846762d1d13a873cc436d3faf9c7c8dfebf14daf792cf47ae2c88586651e056f57"/>
+        <VersionInfo resourceName="remove-query-param-apikey" version="SHA-512:fedac28ff50d0bca86015a692d1b6e093718a7c700308eebb8b74c4b95a71815a7bc9dd92d2809176c881a6affe89177a87205bb9ae618083036394d199b3d05"/>
+        <VersionInfo resourceName="verify-api-key" version="SHA-512:6595defb9a0b6d7fce111a9fe959f5e8a7aa03ffb301373c4c4e20e814648b42d5858631e95e4a8d698b5fe2139390c252e9011d9f1be8c3a35de73c1c269f97"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:402ef466578d9da49ccc27f8a4c62cfa9acc97e56a23556738bc8ca1c709265c53fc0b44ffababd41ee1cd4aa57abc232daf6c5fdec9e8e6ea292c91ff67db54"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>
