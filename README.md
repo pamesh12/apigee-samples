@@ -2,8 +2,8 @@
 Samples for Apigee API Management
 
 1. [3rdPartyOAuthAPI](./3rdPartyOAuthAPI) - OAuth API to demostrate use of 3rd party OAuth servers for Auth Code and token generation. Complete flow can be tested with inclusion of below 2 apis.
-    * [APISecuredBy3rdPartyOAuth](./APISecuredBy3rdPartyOAuth)- Demo API secured by OAuth.
-    * [ExternalClientApp](./ExternalClientApp) - Demo Client App.
+    * [API Secured By 3rdPartyOAuth](./APISecuredBy3rdPartyOAuth)- Demo API secured by OAuth.
+    * [External Client App](./ExternalClientApp) - Demo Client App.
     
     External Client App --> 3rd Party Oauth API --> API Secured by 3rdPatyAPI
     
