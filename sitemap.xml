@@ -9,62 +9,50 @@
 
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/3rdPartyOAuthAPI/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/APISecuredBy3rdPartyOAuth/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/ExternalClientApp/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/3-Legged-OAuth/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/2-Legged-OAuth/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/CacheDemoApi/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/HMACNodeApp/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/GenerateJWTAPI/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/VerifyJWT/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/ExternalLoggingAPI/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://pamesh12.github.io/apigee-samples/ExternalApi/</loc>
-  <lastmod>2020-03-17T11:51:03+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
